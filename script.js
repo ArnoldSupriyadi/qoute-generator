@@ -46,6 +46,7 @@ function newQoute() {
 
 //Get Qoutes From API
 async function getQoutes() {
+  loading();
   const apiUrl = "https://type.fit/api/quotes";
   try {
     const response = await fetch(apiUrl);
